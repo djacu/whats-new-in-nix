@@ -1,0 +1,15 @@
+As of Nix version 2.10, nix search has a new flag, exclude, to filter out packages.
+
+Here we have a command to search nixpkgs for zeromq.
+
+If we run it, we get a list of all packages that have zeromq in the name or description.
+
+Here we add the exclude flag to our command to filter out any packages that mention python.
+
+And you can see, nix search has excluded those packages.
+
+We can also exclude multiple things.
+
+By wrapping the argument to exclude in quotes and using the pipe operator.
+
+And now the list is much shorter.

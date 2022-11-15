@@ -1,0 +1,11 @@
+As of Nix version 2.10, a new builtin function traceVerbose is available.
+
+It is similar to the trace function, but must be enabled explicitely otherwise it behaves as a No-op.
+
+Here we have a command that uses the traceVerbose function.
+
+If we run it, it will simply return "one".
+
+And here we have another command that enables the trace-verbose option.
+
+If it run it, it will also print our message.

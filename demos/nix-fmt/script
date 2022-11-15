@@ -1,0 +1,9 @@
+As of Nix version 2.8, there is a new experimental command, `nix fmt`, which applies a formatter defined by the `formatter.<system>` flake output, to the expressions in your Nix files.
+
+You can format a file or folder by passing it as an argument or format all files by passing no argument.
+
+Here we have our flake that defines the formatter, and a file with a simple expression.
+
+If we run `nix fmt`, it will tell us how many files and which files have been formatted.
+
+And looking at our example file we can see that it has been formatted.
