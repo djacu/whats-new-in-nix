@@ -1,0 +1,8 @@
+#!/bin/bash
+
+export lines=40
+export columns=140
+
+# nix run nixpkgs#gotty -- --width $lines --height $columns tmux new-session -A -s d117237 -x $columns -y $lines -f ./tmux.conf bash
+# nix run nixpkgs#gotty -- --width $lines --height $columns -w bash
+nix run nixpkgs#gotty -- -w bash
